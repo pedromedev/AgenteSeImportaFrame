@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Filtro LinkedIn PVT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>Filtro LinkedIn PVT</h1>
+        <p>Envie sua foto e gere sua moldura para o LinkedIn</p>
+    </header>
+
+    <main class="container">
+        <section class="uploader">
+            <label id="dropzone" class="dropzone" for="fileInput">
+                <input id="fileInput" type="file" accept="image/*" hidden>
+                <div class="dz-inner">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M12 5v14m7-7H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <strong>Arraste sua foto aqui</strong>
+                    <span>ou clique para selecionar</span>
+                    <button class="btn" type="button" id="selectBtn">Selecionar foto</button>
+                </div>
+            </label>
+        </section>
+
+        <section class="preview">
+            <canvas id="canvas" width="1080" height="1080" aria-label="Pré-visualização" class="canvas"></canvas>
+            <div class="actions">
+                <button class="btn primary" id="downloadBtn" disabled>Baixar PNG</button>
+            </div>
+            <p class="hint">A moldura usada é carregada de <code>frame/Filtro LinkedIn PVT.png</code>.</p>
+        </section>
+    </main>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
