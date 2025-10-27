@@ -134,7 +134,7 @@ downloadBtn.addEventListener('click', () => {
 function triggerDownload(url, isObjectURL = false) {
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'linkedin-open-to-work.png';
+    a.download = 'a-gente-se-importa-frame.png';
     document.body.appendChild(a);
     a.click();
     a.remove();
